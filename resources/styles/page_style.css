@@ -1,0 +1,20 @@
+:root {
+    --pageBackgroundColor: black;
+    --contentBackgroundColor: #222222;
+}
+
+body {
+    background-color: var(--pageBackgroundColor);
+}
+
+#container {
+    max-width: 1000px !important;
+    min-width: 500px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: var(--contentBackgroundColor);
+    border-radius: 15px;
+    padding: 50px;
+}

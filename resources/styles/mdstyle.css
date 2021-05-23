@@ -1,0 +1,106 @@
+:root {
+    --codeBackgroundColor: #5c5c5c;
+    --linkColor: #ff4d00;
+    --textColor: white;
+}
+
+#content {
+    color: var(--textColor);
+    font-family: "Fira Code VF";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+#content::before, #content::after {
+    display: table;
+    content: "";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+blockquote {
+    margin: 16px;
+}
+
+code, pre {
+    font-family: "Liberation Mono", monospace;
+    font-size: 12px;
+}
+
+pre {
+    max-width: calc(1000px - 64px);
+    margin-top: 0;
+    margin-bottom: 16px;
+    word-wrap: normal;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--codeBackgroundColor);
+    border-radius: 3px;
+}
+
+code {
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: var(--codeBackgroundColor);
+    border-radius: 3px;
+}
+
+pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+pre code {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: initial;
+    border: 0;
+}
+
+
+
+hr {
+    margin: 50px -10px 50px -10px;
+}
+
+
+
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+}
+
+h2, h3 h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: -1px;
+}
+
+
+
+ol {
+    padding-left: 50px;
+}
