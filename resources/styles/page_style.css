@@ -18,3 +18,12 @@ body {
     border-radius: 15px;
     padding: 50px;
 }
+
+#footerInfo {
+    color: white;
+    font-family: "Fira Code VF";
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}

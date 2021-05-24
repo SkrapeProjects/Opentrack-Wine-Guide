@@ -104,3 +104,16 @@ h1 {
 ol {
     padding-left: 50px;
 }
+
+li {
+    padding: 2px 0px;
+}
+
+
+
+/*
+img {
+    display: table;
+    margin: 0 auto;
+}
+*/
