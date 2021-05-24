@@ -14,7 +14,7 @@ This guide is divided in four parts.
 
 1. Setting up the environment [->](#setting-up-the-environment)
 2. Compiling and installing Opentrack [->](#compiling-and-installing-opentrack)
-3. Testing Opentrack
+3. Testing Opentrack [->](#testing-opentrack)
 4. Using Opentrack with Steam games
 
 For any issues please refer to the project's [issues page](https://github.com/SkrapeProjects/opentrack-wine-guide/issues).  
@@ -50,7 +50,7 @@ Make sure you have installed all the required dependencies by running the comman
 
 Head over to [Opentrack's releases page](https://github.com/opentrack/opentrack/releases) and download the latest available release's source code (either as zip or tar.gz).  
 Open the directory where you have downloaded the file and extract it.  
-You should now have a folder named `opentrack-opentrack-<major>.<minor>.<patch>` containing Opentrack's source code. I'll refer to this folder as `$OPENTRACK_DIR` for the rest of this guide.  
+You should now have a folder named `opentrack-opentrack-<major>.<minor>.<patch>` containing Opentrack's source code. I'll refer to this folder as `OPENTRACK_SRC_DIR` for the rest of this guide.  
 
 ---  
 
@@ -59,7 +59,7 @@ You should now have a folder named `opentrack-opentrack-<major>.<minor>.<patch>`
 Run the following commands in the same order they've been written:
 
 ```
-$ cd $OPENTRACK_DIR           # Change directory $OPENTRACK_DIR
+$ cd $OPENTRACK_SRC_DIR           # Change directory OPENTRACK_SRC_DIR
 $ mkdir build                 # Create a directory called "build" (needed by cmake)
 $ cd build                    # Change directory to "build"
 $ cmake ..                    # Setup build with the default parameters
@@ -81,7 +81,7 @@ You can use the `UP` and `DOWN` arrows to change field. Press `SPACE` to toggle 
 
 Once you have modified the options mentioned above press `c` (to configure the build) and `g` (to generate the Makefile). If everything has gone smoothly, `ccmake` should return to the terminal. If instead `ccmake` throws an error, try deleting the `build` directory and try again from the second command ([here](#compiling-and-installing-opentrack)).
 
-Here's a demo of the entire configuration (`ccmake`) process:  
+Here's a demo of the `ccmake` configuration process:  
 
 ![CCMake setup demo](resources/images/ccmake-demo.gif)  
 
@@ -89,7 +89,7 @@ Once you're back in the terminal, check you're still in the `build` directory an
 
 ```
 $ make -j$(nproc)           # Build Opentrack
-$ make install              # Install Opentrack to $CMAKE_INSTALL_PREFIX location
+$ make install              # Install Opentrack in the location specified in CMAKE_INSTALL_PREFIX
 ```
 
 Remember to check for errors.  
@@ -105,4 +105,12 @@ Just head over to the directory you set as `CMAKE_INSTALL_PREFIX` and check if a
 └── share
     ├── doc             # Directory
     └── opentrack       # Directory
-```
+```  
+
+---
+
+## Testing Opentrack
+
+From this point on I will refer to the install directory specified in `CMAKE_INSTALL_PREFIX` as `OPENTRACK_INST_DIR`.  
+
+
