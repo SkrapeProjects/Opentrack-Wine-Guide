@@ -38,7 +38,7 @@ Make sure you have installed all the required dependencies by running the comman
 > #### Ubuntu/Debian
 
 > ```
-> $ sudo apt install make cmake cmake-curses-gui qttools5-dev qtbase5-private-dev libprocps-dev libopencv-dev libevdev-dev wine-stable wine32-development wine32-tools wine32-development-tools
+> $ sudo apt install make cmake cmake-curses-gui qttools5-dev qtbase5-private-dev libprocps-dev libopencv-dev libevdev-dev gcc-multilib g++-multilib wine-stable wine32-development wine32-tools wine32-development-tools
 > ```  
 
 **IMPORTANT**: Make sure your Wine version is <=5.6  
