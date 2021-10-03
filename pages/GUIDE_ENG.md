@@ -2,6 +2,12 @@
 
 ---
 
+## Automated build scripts
+
+Scripts for automating the build process are now available [here](https://github.com/SkrapeProjects/opentrack-wine-guide/tree/main/build_scripts).
+
+---
+
 ## What you'll find in this guide
 
 This is a guide on how to compile and setup [Opentrack](https://github.com/opentrack/opentrack) on Linux and use it with Steam games running through the Proton compatibility layer.
@@ -40,6 +46,12 @@ Make sure you have installed all the required dependencies by running the comman
 > ```
 > $ sudo apt install build-essential cmake cmake-curses-gui qttools5-dev qtbase5-private-dev libprocps-dev libopencv-dev libevdev-dev gcc-multilib g++-multilib wine-stable wine32-development wine32-tools wine32-development-tools
 > ```  
+
+> #### Fedora
+
+> ```
+> $ sudo dnf install qt5-qtbase-private-devel qt5-qttools-devel procps-ng-devel opencv-devel libevdev-devel qt5-qtserialport-devel make cmake unzip gcc g++ glibc-devel.i686 libstdc++-devel.i686 wine wine-devel.i686
+> ```
 
 **IMPORTANT**: Make sure your Wine version is <=5.6  
 
@@ -193,7 +205,7 @@ Start by setting up your input.
 This is not a tutorial on how to use Opentrack (at least not yet), so I'm going to take it for garanted you already know how to do it. If this is your first time using Opentrack, please refer to [Opentrack's Wiki](https://github.com/opentrack/opentrack/wiki).  
 
 **NOTE: FreePIE**  
-If you don't have the equipment for IR tracking but you have an Android phone(like the guy who's writing this), you can try using FreePIE.  
+If you don't have the equipment for IR tracking but you have an Android phone (like the guy who's writing this), you can try using FreePIE.  
 
 It's now time to set out the output.  
 
