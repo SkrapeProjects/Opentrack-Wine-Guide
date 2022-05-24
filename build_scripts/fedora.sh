@@ -2,7 +2,7 @@
 
 
 WORKDIR=$(pwd)/opentrack_workspace
-DEPS="qt5-qtbase-private-devel qt5-qttools-devel procps-ng-devel opencv-devel libevdev-devel qt5-qtserialport-devel make cmake unzip gcc g++ glibc-devel.i686 libstdc++-devel.i686 wine wine-devel.i686"
+DEPS="qt5-qtbase-devel qt5-qtbase-private-devel qt5-qttools-devel qt5-qtserialport-devel procps-ng-devel procps-ng opencv-devel opencv libevdev-devel libevdev make cmake unzip gcc g++ glibc-devel glibc-devel.i686 libstdc++-devel libstdc++-devel.i686 wine wine-devel wine-devel.i686"
 
 sudo dnf upgrade -y
 sudo dnf install -y $DEPS
